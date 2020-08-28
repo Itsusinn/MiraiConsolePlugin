@@ -1,7 +1,7 @@
 # Mirai Console Plugin
 My repo storing mirai-console plugins written by myself
 
-In my free time,I wrote there plugins.
+In my free time,I wrote these plugins.
 
 They mostly are side-products of my learning
 
