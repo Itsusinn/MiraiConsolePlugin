@@ -7,7 +7,7 @@ They mostly are side-products of my learning
 
 #### What is mirai？
 
-[Github]: https://github.com/mamoe/mirai
+[Github]: https://github.com/mamoe/mirai	"Mirai Repo"
 
 
 
