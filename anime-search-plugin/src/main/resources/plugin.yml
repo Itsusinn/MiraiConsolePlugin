@@ -1,3 +1,3 @@
-name: "MyPlugin"
-main: "org.example.myplugin.MyPluginMain"
+name: "AnimeSearchPlugin"
+main: "org.meowcat.mirai.consoleplugin.AnimeSearchPlugin"
 version: "1.0.0"
