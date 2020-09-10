@@ -9,6 +9,7 @@ import net.mamoe.mirai.console.command.CompositeCommand
 import net.mamoe.mirai.console.command.MemberCommandSender
 import net.mamoe.mirai.console.data.*
 import net.mamoe.mirai.console.plugin.jvm.KotlinPlugin
+import net.mamoe.mirai.console.plugin.jvm.SimpleJvmPluginDescription
 import net.mamoe.mirai.console.util.BotManager
 import net.mamoe.mirai.console.util.BotManager.INSTANCE.addManager
 import net.mamoe.mirai.console.util.ConsoleExperimentalAPI
@@ -20,7 +21,12 @@ import net.mamoe.mirai.message.data.queryUrl
 import org.meowcat.mirai.consoleplugin.AnimeSearchPlugin.animeSearchClient
 
 
-object AnimeSearchPlugin : KotlinPlugin() {
+object AnimeSearchPlugin : KotlinPlugin(
+    SimpleJvmPluginDescription(
+    "animeSearchPlugin",
+    "0.1.0"
+)
+) {
     val animeSearchClient = TraceMoeService.Factory.create()
 
 
@@ -116,8 +122,8 @@ object MyCustomPermission : CommandPermission {
     override fun CommandSender.hasPermission(): Boolean {
 
         return if(this is MemberCommandSender){
-//            MySetting.isEnabled.contains(this.group.id)
-            true
+            MySetting.isEnabled.contains(this.group.id)
+            false
         }else true
     }
 }
