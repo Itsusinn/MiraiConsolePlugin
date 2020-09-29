@@ -13,7 +13,7 @@ suspend fun main() {
     AnimeSearchPlugin.load() // 主动加载插件, Console 会调用 MyPluginMain.onLoad
     AnimeSearchPlugin.enable() // 动启用插件, Console 会调用 MyPluginMain.onEnable
 
-    val bot = MiraiConsole.addBot(123456, "").alsoLogin() // 登录一个测试环境的 Bot
+    val bot = MiraiConsole.addBot(3025420184, "Qwe233233").alsoLogin() // 登录一个测试环境的 Bot
 
     MiraiConsole.job.join()
 }
