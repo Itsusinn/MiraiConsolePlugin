@@ -5,7 +5,7 @@ plugins {
     id("com.github.johnrengelman.shadow") version "5.2.0"
 }
 
-group = "org.meowcat"
+group = "org.meowcat.atri"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -19,9 +19,6 @@ kotlin.sourceSets.all {
 }
 
 dependencies {
-    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-    implementation("com.squareup.retrofit2:retrofit:2.9.0")
-
     compileOnly(kotlin("stdlib-jdk8"))
 
     val core = "1.2.3"
@@ -38,7 +35,6 @@ dependencies {
     testImplementation("net.mamoe:mirai-core:$core")
     testImplementation("net.mamoe:mirai-console-pure:$console")
     testImplementation(kotlin("stdlib-jdk8"))
-
 }
 
 kotlin.target.compilations.all {
